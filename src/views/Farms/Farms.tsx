@@ -103,12 +103,20 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
       </Heading>
       <Heading as="h3" color="secondary" mb="50px" style={{ textAlign: 'center' }}>
         {TranslateString(100000, 'The longer you freeze your tokens, the more profit you get')}
-        <p>3 days of freezing: <b>5 percent extra</b></p>
-        <p>7 days of freezing: <b>10 percent extra</b></p>
-        <p>10 days of freezing: <b>15 percent extra</b></p>
-        <p>15 days of freezing: <b>20 percent extra</b></p>
+        <p>
+          3 days of freezing: <b>5 percent extra</b>
+        </p>
+        <p>
+          7 days of freezing: <b>10 percent extra</b>
+        </p>
+        <p>
+          10 days of freezing: <b>15 percent extra</b>
+        </p>
+        <p>
+          15 days of freezing: <b>20 percent extra</b>
+        </p>
       </Heading>
-      
+
       <FarmTabButtons stakedOnly={stakedOnly} setStakedOnly={setStakedOnly} />
       <div>
         <Divider />
