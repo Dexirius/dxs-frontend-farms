@@ -98,9 +98,17 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
           ? TranslateString(10002, 'Stake tokens to earn FREEZER')
           : TranslateString(320, 'Stake LP tokens to earn FREEZER')}
       </Heading>
-      <Heading as="h2" color="secondary" mb="50px" style={{ textAlign: 'center' }}>
+      <Heading as="h2" color="secondary" mb="10px" style={{ textAlign: 'center' }}>
         {TranslateString(10000, 'Deposit Fee will be used to buyback FREEZER')}
       </Heading>
+      <Heading as="h3" color="secondary" mb="50px" style={{ textAlign: 'center' }}>
+        {TranslateString(100000, 'The longer you freeze your tokens, the more profit you get')}
+        <p>3 days of freezing: <b>5 percent extra</b></p>
+        <p>7 days of freezing: <b>10 percent extra</b></p>
+        <p>10 days of freezing: <b>15 percent extra</b></p>
+        <p>15 days of freezing: <b>20 percent extra</b></p>
+      </Heading>
+      
       <FarmTabButtons stakedOnly={stakedOnly} setStakedOnly={setStakedOnly} />
       <div>
         <Divider />

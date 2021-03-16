@@ -8,12 +8,12 @@ const farms: FarmConfig[] = [
     lpSymbol: 'FREEZER-BUSD LP',
     lpAddresses: {
       97: '',
-      56: '0x19e7cbecdd23a16dfa5573df54d98f7caae03019',
+      56: '0xa50093755F66B8BB4422821B51630B76C67F9540',
     },
     tokenSymbol: 'FREEZER',
     tokenAddresses: {
       97: '',
-      56: '0xf952fc3ca7325cc27d15885d37117676d25bfda6',
+      56: '0x35d81fe74D0CFC375Deba9aD093736C536794dF7',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
@@ -24,12 +24,12 @@ const farms: FarmConfig[] = [
     lpSymbol: 'FREEZER-BNB LP',
     lpAddresses: {
       97: '',
-      56: '0xd1b59d11316e87c3a0a069e80f590ba35cd8d8d3',
+      56: '0x2CA301407c68e1BDF8Cc4071814a3264444f2979',
     },
     tokenSymbol: 'FREEZER',
     tokenAddresses: {
       97: '',
-      56: '0xf952fc3ca7325cc27d15885d37117676d25bfda6',
+      56: '0x35d81fe74D0CFC375Deba9aD093736C536794dF7',
     },
     quoteTokenSymbol: QuoteToken.BNB,
     quoteTokenAdresses: contracts.wbnb,
@@ -185,12 +185,12 @@ const farms: FarmConfig[] = [
     lpSymbol: 'FREEZER',
     lpAddresses: {
       97: '',
-      56: '0x19e7cbecdd23a16dfa5573df54d98f7caae03019', // FREEZER-BUSD LP
+      56: '0xa50093755F66B8BB4422821B51630B76C67F9540', // FREEZER-BUSD LP
     },
     tokenSymbol: 'FREEZER',
     tokenAddresses: {
       97: '',
-      56: '0xf952fc3ca7325cc27d15885d37117676d25bfda6',
+      56: '0x35d81fe74D0CFC375Deba9aD093736C536794dF7',
     },
     quoteTokenSymbol: QuoteToken.BUSD,
     quoteTokenAdresses: contracts.busd,
@@ -202,7 +202,7 @@ const farms: FarmConfig[] = [
     lpSymbol: 'BUSD',
     lpAddresses: {
       97: '',
-      56: '0x19e7cbecdd23a16dfa5573df54d98f7caae03019', // EGG-BUSD LP (BUSD-BUSD will ignore)
+      56: '0xa50093755F66B8BB4422821B51630B76C67F9540', // EGG-BUSD LP (BUSD-BUSD will ignore)
     },
     tokenSymbol: 'BUSD',
     tokenAddresses: {
