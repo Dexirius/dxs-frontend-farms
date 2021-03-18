@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="36" viewBox="0 0 40 36">
+  <g id="camera" transform="translate(-4 -4)">
+    <path id="Trazado_41370" data-name="Trazado 41370" d="M30,24a6,6,0,1,1-6-6A6,6,0,0,1,30,24Z" fill="#fff"/>
+    <path id="Trazado_41371" data-name="Trazado 41371" d="M33.66,8H40a4.012,4.012,0,0,1,4,4V36a4.012,4.012,0,0,1-4,4H8a4.012,4.012,0,0,1-4-4V12A4.012,4.012,0,0,1,8,8h6.34L16.8,5.3A4.058,4.058,0,0,1,19.76,4h8.48a3.981,3.981,0,0,1,2.94,1.3ZM14,24A10,10,0,1,0,24,14,10,10,0,0,0,14,24Z" fill="#fff" fill-rule="evenodd"/>
+  </g>
+</svg>

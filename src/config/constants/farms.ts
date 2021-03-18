@@ -5,12 +5,12 @@ const farms: FarmConfig[] = [
   {
     pid: 0,
     risk: 5,
-    lpSymbol: 'FREEZER-BUSD LP',
+    lpSymbol: 'DXS-BUSD LP',
     lpAddresses: {
       97: '',
       56: '0xa50093755F66B8BB4422821B51630B76C67F9540',
     },
-    tokenSymbol: 'FREEZER',
+    tokenSymbol: 'DXS',
     tokenAddresses: {
       97: '',
       56: '0x35d81fe74D0CFC375Deba9aD093736C536794dF7',
@@ -21,12 +21,12 @@ const farms: FarmConfig[] = [
   {
     pid: 1,
     risk: 5,
-    lpSymbol: 'FREEZER-BNB LP',
+    lpSymbol: 'DXS-BNB LP',
     lpAddresses: {
       97: '',
       56: '0x2CA301407c68e1BDF8Cc4071814a3264444f2979',
     },
-    tokenSymbol: 'FREEZER',
+    tokenSymbol: 'DXS',
     tokenAddresses: {
       97: '',
       56: '0x35d81fe74D0CFC375Deba9aD093736C536794dF7',
@@ -182,12 +182,12 @@ const farms: FarmConfig[] = [
     pid: 12,
     risk: 5,
     isTokenOnly: true,
-    lpSymbol: 'FREEZER',
+    lpSymbol: 'DXS',
     lpAddresses: {
       97: '',
-      56: '0xa50093755F66B8BB4422821B51630B76C67F9540', // FREEZER-BUSD LP
+      56: '0xa50093755F66B8BB4422821B51630B76C67F9540', // DXS-BUSD LP
     },
-    tokenSymbol: 'FREEZER',
+    tokenSymbol: 'DXS',
     tokenAddresses: {
       97: '',
       56: '0x35d81fe74D0CFC375Deba9aD093736C536794dF7',

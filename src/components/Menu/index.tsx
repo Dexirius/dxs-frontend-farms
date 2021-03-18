@@ -25,7 +25,7 @@ const Menu = (props) => {
       setLang={setSelectedLanguage}
       cakePriceUsd={cakePriceUsd.toNumber()}
       links={config}
-      priceLink="https://freezer.finance"
+      priceLink="https://dexirius.finance"
       {...props}
     />
   )

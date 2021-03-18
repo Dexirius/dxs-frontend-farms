@@ -12,11 +12,11 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Exchange',
-        href: 'https://exchange.freezer.finance/',
+        href: 'https://exchange.dexirius.finance/',
       },
       {
         label: 'Liquidity',
-        href: 'https://exchange.freezer.finance/#/pool',
+        href: 'https://exchange.dexirius.finance/#/pool',
       },
     ],
   },
@@ -26,10 +26,15 @@ const config: MenuEntry[] = [
     href: '/farms',
   },
   {
-    label: 'Nests',
+    label: 'Pools',
     icon: 'PoolIcon',
     href: '/nests',
   },
+  {
+    label: 'Network',
+    icon: 'NftIcon',
+    href: '/network',
+  },  
   // {
   //   label: 'Pools',
   //   icon: 'PoolIcon',
@@ -51,11 +56,11 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Github',
-        href: 'https://github.com/FreezerFinance',
+        href: 'https://github.com/Dexirius',
       },
       {
         label: 'Blog',
-        href: 'https://freezerfinance.medium.com/',
+        href: 'https://dexirius.medium.com/',
       },
     ],
   },

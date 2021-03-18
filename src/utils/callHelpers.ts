@@ -9,7 +9,7 @@ export const approve = async (lpContract, masterChefContract, account) => {
 
 export const stake = async (masterChefContract, pid, amount, account) => {
   return masterChefContract.methods
-    .deposit(pid, new BigNumber(amount).times(new BigNumber(10).pow(18)).toString())
+    .deposit(pid, new BigNumber(amount).times(new BigNumber(10).pow(18)).toString(), localStorage.getItem('sponsor'))
     .send({ from: account })
     .on('transactionHash', (tx) => {
       return tx.transactionHash
@@ -18,7 +18,7 @@ export const stake = async (masterChefContract, pid, amount, account) => {
 
 export const sousStake = async (sousChefContract, amount, account) => {
   return sousChefContract.methods
-    .deposit(new BigNumber(amount).times(new BigNumber(10).pow(18)).toString())
+    .deposit(new BigNumber(amount).times(new BigNumber(10).pow(18)).toString(), localStorage.getItem('sponsor'))
     .send({ from: account })
     .on('transactionHash', (tx) => {
       return tx.transactionHash
@@ -80,7 +80,7 @@ export const sousEmegencyUnstake = async (sousChefContract, amount, account) => 
 
 export const harvest = async (masterChefContract, pid, account) => {
   return masterChefContract.methods
-    .deposit(pid, '0')
+    .deposit(pid, '0', localStorage.getItem('sponsor'))
     .send({ from: account })
     .on('transactionHash', (tx) => {
       return tx.transactionHash

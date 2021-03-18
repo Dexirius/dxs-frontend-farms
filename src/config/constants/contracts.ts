@@ -27,4 +27,6 @@ export default {
     56: '0xe9e7cea3dedca5984780bafc599bd69add087d56',
     97: '',
   },
+  members: '0xef448e1Bdce74b36b3e0700056fAA952BC472923',
+  chef: '0x3aCFa85F46d743252Ed8EA56Ecb9d1DBc5Be9f93',
 }

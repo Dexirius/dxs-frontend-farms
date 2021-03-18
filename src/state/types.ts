@@ -1,5 +1,5 @@
 import BigNumber from 'bignumber.js'
-import { FarmConfig, PoolConfig } from 'config/constants/types'
+import { FarmConfig, PoolConfig, Team } from 'config/constants/types'
 
 export interface Farm extends FarmConfig {
   tokenAmount?: BigNumber
@@ -44,4 +44,24 @@ export interface PoolsState {
 export interface State {
   farms: FarmsState
   pools: PoolsState
+}
+
+
+export type TeamResponse = {
+  0: string
+  1: string
+  2: string
+  3: string
+  4: boolean
+}
+
+export type TeamsById = {
+  [key: string]: Team
+}
+
+export interface TeamsState {
+  isInitialized: boolean
+  isLoading: boolean
+  data: TeamsById
+  ancho: any
 }

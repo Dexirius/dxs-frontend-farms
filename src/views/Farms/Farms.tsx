@@ -5,7 +5,7 @@ import BigNumber from 'bignumber.js'
 import { useWallet } from '@binance-chain/bsc-use-wallet'
 import { provider } from 'web3-core'
 import { Image, Heading } from '@pancakeswap-libs/uikit'
-import { BLOCKS_PER_YEAR, CAKE_PER_BLOCK, CAKE_POOL_PID } from 'config'
+import { BLOCKS_PER_YEAR,  } from 'config'
 import FlexLayout from 'components/layout/Flex'
 import Page from 'components/layout/Page'
 import { useFarms, usePriceBnbBusd, usePriceCakeBusd } from 'state/hooks'
@@ -95,28 +95,12 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
     <Page>
       <Heading as="h1" size="lg" color="primary" mb="50px" style={{ textAlign: 'center' }}>
         {tokenMode
-          ? TranslateString(10002, 'Stake tokens to earn FREEZER')
-          : TranslateString(320, 'Stake LP tokens to earn FREEZER')}
+          ? TranslateString(10002, 'Stake tokens to earn DXS')
+          : TranslateString(320, 'Stake LP tokens to earn DXS')}
       </Heading>
       <Heading as="h2" color="secondary" mb="10px" style={{ textAlign: 'center' }}>
-        {TranslateString(10000, 'Deposit Fee will be used to buyback FREEZER')}
+        {TranslateString(10000, 'Deposit Fee will be used to buyback DXS')}
       </Heading>
-      <Heading as="h3" color="secondary" mb="50px" style={{ textAlign: 'center' }}>
-        {TranslateString(100000, 'The longer you freeze your tokens, the more profit you get')}
-        <p>
-          3 days of freezing: <b>5 percent extra</b>
-        </p>
-        <p>
-          7 days of freezing: <b>10 percent extra</b>
-        </p>
-        <p>
-          10 days of freezing: <b>15 percent extra</b>
-        </p>
-        <p>
-          15 days of freezing: <b>20 percent extra</b>
-        </p>
-      </Heading>
-
       <FarmTabButtons stakedOnly={stakedOnly} setStakedOnly={setStakedOnly} />
       <div>
         <Divider />
