@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 // import { useSelector } from 'react-redux'
 // import { withRouter } from 'react-router-dom'
-import {  Text } from '@pancakeswap-libs/uikit'
+import { Text } from '@pancakeswap-libs/uikit'
 import imgBinary from '../../config/img/binary.png'
 
 interface jsonProps {
@@ -90,13 +90,7 @@ const Tree: React.FC<TreeProps> = ({ json, ancho, m }) => {
               <td colSpan={tdMain()} className={`${getClassChilden()}`}>
                 <div className="node">
                   <div className="person">
-                    <div
-                      className="avat click"
-                      role="presentation"
-                      id={json.address}
-                      onClick={() => getChildren(json)}
-                      
-                    >
+                    <div className="avat click" role="presentation" id={json.address} onClick={() => getChildren(json)}>
                       <img src={imgBinary} alt="" />
                     </div>
                     <div className="id click addr_net" role="presentation" onClick={() => openAddr(json.address)}>

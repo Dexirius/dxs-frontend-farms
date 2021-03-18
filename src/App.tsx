@@ -43,12 +43,7 @@ const App: React.FC = () => {
     console.warn = () => null
   }, [])
 
-
   useFetchPublicData()
-
-
-
-
 
   useEffect(() => {
     const init = async () => {
@@ -140,10 +135,8 @@ const App: React.FC = () => {
     }
     setTimeout(() => {
       init()
-    }, 4000);
+    }, 4000)
   }, [])
-
-
 
   return (
     <Router>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import BigNumber from 'bignumber.js'
-import { Card, CardBody, Heading, Text, Button }  from '@pancakeswap-libs/uikit'
+import { Card, CardBody, Heading, Text, Button } from '@pancakeswap-libs/uikit'
 import styled from 'styled-components'
 import { useWallet } from '@binance-chain/bsc-use-wallet'
 // import { getBalanceNumber } from 'utils/formatBalance'

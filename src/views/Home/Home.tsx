@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import {  BaseLayout } from '@pancakeswap-libs/uikit'
+import { BaseLayout } from '@pancakeswap-libs/uikit'
 // import useI18n from 'hooks/useI18n'
 import Page from 'components/layout/Page'
 import FarmStakingCard from './components/FarmStakingCard'
@@ -99,7 +99,7 @@ const Home: React.FC = () => {
           <CTACards className="referidos_container">
             <Register />
           </CTACards>
-        </div>        
+        </div>
       </div>
     </Page>
   )

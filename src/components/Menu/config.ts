@@ -34,7 +34,7 @@ const config: MenuEntry[] = [
     label: 'Network',
     icon: 'NftIcon',
     href: '/network',
-  },  
+  },
   // {
   //   label: 'Pools',
   //   icon: 'PoolIcon',

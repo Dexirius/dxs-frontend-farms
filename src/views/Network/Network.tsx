@@ -9,7 +9,6 @@ import { getWeb3 } from 'utils/web3'
 // import { useSelector, useDispatch } from 'react-redux'
 // import FlexLayout from 'components/layout/Flex'
 
-
 // import FarmStakingCard from 'views/Home/components/FarmStakingCard'
 // import LotteryCard from 'views/Home/components/LotteryCard'
 // import CakeStats from 'views/Home/components/CakeStats'
@@ -102,11 +101,9 @@ const Network = () => {
   const [_val5, setVal5] = useState(0)
   const [ancho, setAncho] = useState(window.innerWidth)
 
-
   window.addEventListener('resize', () => {
     setAncho(window.innerWidth)
   })
-
 
   useEffect(() => {
     const init = async () => {
@@ -214,14 +211,16 @@ const Network = () => {
         <Heading as="h1" size="xl" mb="24px" color="secondary">
           Network structure
         </Heading>
-        <Text>
-          Build your network and enjoy a small percentage of what your network mines in yields farming
-        </Text>
+        <Text>Build your network and enjoy a small percentage of what your network mines in yields farming</Text>
       </Hero>
       <div className="tree_center">
         <div className="tree text-center">
-          { dataStatus !== null && <Tree json={data} ancho={ancho} m={mm} /> }
-          { dataStatus === null && <><img src={imgLoading} alt="" /></> }
+          {dataStatus !== null && <Tree json={data} ancho={ancho} m={mm} />}
+          {dataStatus === null && (
+            <>
+              <img src={imgLoading} alt="" />
+            </>
+          )}
         </div>
       </div>
       <div className="tree_center mt_net">
@@ -234,8 +233,8 @@ const Network = () => {
         <p className="mt-3">
           <Text>
             {`Level 1: ${x(_val1)}%, Level 2: ${x(_val2)}%, Level 3: ${x(_val3)}%, Level 4: ${x(_val4)}%, Level 5: ${x(
-                _val5,
-              )}%`}
+              _val5,
+            )}%`}
           </Text>
         </p>
       </div>

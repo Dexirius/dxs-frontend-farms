@@ -46,7 +46,6 @@ export interface State {
   pools: PoolsState
 }
 
-
 export type TeamResponse = {
   0: string
   1: string
